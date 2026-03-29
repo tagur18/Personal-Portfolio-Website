@@ -1,0 +1,22 @@
+@import "tailwindcss";
+body {
+  @apply bg-gray-100 dark:bg-black;
+}
+
+.section {
+  @apply max-w-6xl mx-auto px-4 sm:px-6 py-16;
+}
+
+.card {
+  @apply bg-white dark:bg-blue-950/40 rounded-2xl shadow-xl border border-gray-200 dark:border-blue-900/40 p-6;
+}
+html {
+  scroll-padding-top: 160px;
+   scroll-behavior: smooth;
+}
+/* section {
+  margin-top: 100px;
+}
+* {
+  margin: 0 auto;
+} */
