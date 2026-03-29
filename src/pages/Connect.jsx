@@ -1,10 +1,5 @@
 import React from "react";
-import {
-  Mail,
-  Phone,
-  GraduationCap,
-  User,
-} from "lucide-react";
+import { Mail, Phone, GraduationCap, User } from "lucide-react";
 
 import {
   FaGithub,
@@ -114,14 +109,12 @@ const Connect = () => {
           >
             Connect with{" "}
             <span className="bg-gradient-to-r from-blue-500 to-blue-600 bg-clip-text text-transparent">
-                Tagur Kethavath
+              Tagur Kethavath
             </span>
           </h1>
 
           <p
-            className={`text-lg ${
-              isDark ? "text-gray-400" : "text-gray-600"
-            }`}
+            className={`text-lg ${isDark ? "text-gray-400" : "text-gray-600"}`}
           >
             Age: 20 Years
           </p>
@@ -141,16 +134,32 @@ const Connect = () => {
               <div className="text-blue-600">{item.icon}</div>
               <div>
                 <p className="text-sm text-gray-500">{item.label}</p>
-                <p className="font-semibold">{item.value}</p>
+                <p className="font-semibold">
+                  {item.label.includes("Email") ? (
+                    <a
+                      href={`mailto:${item.value}`}
+                      className="text-blue-500 hover:underline"
+                    >
+                      {item.value}
+                    </a>
+                  ) : item.label === "Phone" ? (
+                    <a
+                      href={`tel:${item.value}`}
+                      className="text-blue-500 hover:underline"
+                    >
+                      {item.value}
+                    </a>
+                  ) : (
+                    item.value
+                  )}
+                </p>
               </div>
             </div>
           ))}
         </div>
 
         {/* Social Links */}
-        <h2 className="text-2xl font-semibold mb-6 text-center">
-          Find Me On
-        </h2>
+        <h2 className="text-2xl font-semibold mb-6 text-center">Find Me On</h2>
 
         <div className="grid sm:grid-cols-2 gap-4">
           {socials.map((social, i) => (
@@ -174,7 +183,7 @@ const Connect = () => {
         {/* Buttons */}
         <div className="flex flex-col sm:flex-row justify-center gap-4 mt-10">
           <a
-            href="mailto:tagorerathod18@gmail@gmail.com"
+           href="mailto:tagorerathod18@gmail.com?subject=Portfolio%20Contact&body=Hi%20Tagur%2C%20I%20want%20to%20connect%20with%20you"
             className="px-8 py-4 rounded-xl bg-blue-600 text-white text-center hover:scale-105 transition"
           >
             <Mail className="inline w-5 h-5 mr-2" />
@@ -182,7 +191,7 @@ const Connect = () => {
           </a>
 
           <a
-            href="https://wa.me/9347679203"
+            href="https://wa.me/919347567576?text=Hi%20Tagur%2C%20I%20want%20to%20connect%20with%20you"
             className="px-8 py-4 rounded-xl border-2 border-blue-600 text-blue-600 text-center hover:bg-green-500 hover:text-white transition"
           >
             <FaWhatsapp className="inline w-5 h-5 mr-2" />
@@ -195,4 +204,3 @@ const Connect = () => {
 };
 
 export default Connect;
-

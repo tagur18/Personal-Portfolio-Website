@@ -43,9 +43,9 @@ const Work = () => {
      {
       title: "My Portfolio",
       desc: "My Portfolio — A personal website showcasing my skills, projects, and journey as a developer with smooth animations and dark/light mode.",
-      img: "./myport.png",
-      live: "/",
-      git: "/",
+      img: "./33.png",
+      live: "https://personal-portfolio-website-5w7d.onrender.com",
+      git: "https://github.com/tagur18/Personal-Portfolio-Website",
       tech: ["React", "Framer Motion", "Tailwind"],
     },
     {
