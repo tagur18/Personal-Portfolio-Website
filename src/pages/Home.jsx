@@ -240,14 +240,14 @@ const Home = () => {
 
               {/* ROW 1 */}
               <div className="grid grid-cols-2 gap-3">
-                <a href="/Tagur_Resume.pdf" target="_blank" rel="noopener noreferrer">
+                <a href="/My_Resume.pdf" target="_blank" rel="noopener noreferrer">
                   <button className="w-full px-4 py-2.5 text-sm rounded-lg bg-blue-600 text-white font-semibold hover:bg-blue-700 transition flex items-center justify-center gap-2">
                     <FaExternalLinkAlt className="text-xs" />
                     View Resume
                   </button>
                 </a>
 
-                <a href="/Tagur_Resume.pdf" download>
+                <a href="/My_Resume.pdf" download>
                   <button className="w-full px-4 py-2.5 text-sm rounded-lg border-2 border-blue-600 text-blue-600 font-semibold hover:bg-blue-50 transition flex items-center justify-center gap-2">
                     <FaDownload className="text-xs" />
                     Download
