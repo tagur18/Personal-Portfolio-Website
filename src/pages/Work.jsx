@@ -32,14 +32,7 @@ const Work = () => {
       git: "https://github.com/tagur18/Bite-Buddy-Food-Delivery-Web-App",
       tech: ["HTML", "CSS", "JavaScript"],
     },
-    {
-      title: "Amazon Clone",
-      desc: "Amazon Clone — A front-end project recreating Amazon’s homepage using HTML and CSS, focusing on layout design, styling, and responsive UI fundamentals.",
-      img: "./amazon.png",
-      live: "https://amazon-clone-html-css.netlify.app/",
-      git: "https://github.com/tagur18/Amazon-website-clone",
-      tech: ["HTML", "CSS", "JavaScript"],
-    },
+  
      {
       title: "My Portfolio",
       desc: "My Portfolio — A personal website showcasing my skills, projects, and journey as a developer with smooth animations and dark/light mode.",
@@ -47,6 +40,14 @@ const Work = () => {
       live: "https://personal-portfolio-website-5w7d.onrender.com",
       git: "https://github.com/tagur18/Personal-Portfolio-Website",
       tech: ["React", "Framer Motion", "Tailwind"],
+    },
+    {
+      title: "Amazon Clone",
+      desc: "Amazon Clone — A front-end project recreating Amazon’s homepage using HTML and CSS, focusing on layout design, styling, and responsive UI fundamentals.",
+      img: "./amazon.png",
+      live: "/",
+      git: "https://github.com/tagur18/Amazon-website-clone",
+      tech: ["HTML", "CSS", "JavaScript"],
     },
     {
       title: "Spotify UI Clone",
